@@ -1,0 +1,17 @@
+﻿{
+  "bv_NotVoted": "{red}Jūs dar nebalsavote.",
+  "bv_NoVote": "{red}Šiuo metu nėra balsavimo.",
+  "bv_YesVote": "{red}Balsavimas šiuo metu vyksta.",
+  "bv_WrongUsage": "{red}Neteisingas naudojimas! {lightred}Teisingas naudojimas: {white}!vote pavadinimas [variantas1 variantas2 variantas3...]",
+  "bv_MaxOptions": "{red}Galite pridėti iki {lightpurple}7 {red}variantų!",
+  "bv_VoteStopped": "{red}Balsavimas baigėsi.",
+  "bv_AlreadyVoted": "{red}Jūs jau balsavote už {lightpurple}{0}{red}.",
+  "bv_VotedFor": "{lightpurple}{0} {lightyellow}balsavo už.",
+  "bv_VotedAgainFor": "{lightpurple}{0} {lightyellow}dar kartą balsavo už.",
+  "bv_PlayerVotedFor": "{lightpurple}{0} - {lightyellow}{1} {white}balsavo už.",
+  "bv_PlayerAgainVotedFor": "{lightpurple}{0} - {lightyellow}{1} {white}dar kartą balsavo už.",
+  "bv_DuplicateOptions": "{lightpurple}{0} {red}variantas {lightyellow}naudotas daugiau nei {red}vieną kartą.",
+  "bv_VoteWinner": "{white}Balsavimo rezultatas: {lightpurple}{0} {lightyellow}laimėjo su {white}{1} balsais!",
+  "bv_VoteTie": "{white}Balsavimas lygus: {lightpurple}{0} {lightyellow}gavo {white}{1} balsus.",
+  "bv_NoVotesCast": "{red}Balsų nebuvo pateikta."
+}

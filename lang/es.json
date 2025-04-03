@@ -1,0 +1,17 @@
+﻿{
+  "bv_NotVoted": "{red}No has votado aún.",
+  "bv_NoVote": "{red}No hay una votación en curso.",
+  "bv_YesVote": "{red}Hay una votación en curso.",
+  "bv_WrongUsage": "{red}¡Uso incorrecto! {lightred}Uso correcto: {white}!vote título [opción1 opción2 opción3...]",
+  "bv_MaxOptions": "{red}¡Puedes agregar hasta {lightpurple}7 {red}opciones!",
+  "bv_VoteStopped": "{red}La votación ha terminado.",
+  "bv_AlreadyVoted": "{red}Ya has votado por {lightpurple}{0}{red}.",
+  "bv_VotedFor": "{lightpurple}{0} {lightyellow}votó por.",
+  "bv_VotedAgainFor": "{lightpurple}{0} {lightyellow}volvió a votar por.",
+  "bv_PlayerVotedFor": "{lightpurple}{0} {white}votó por {lightyellow}{1}.",
+  "bv_PlayerAgainVotedFor": "{lightpurple}{0} {white}volvió a votar por {lightyellow}{1}.",
+  "bv_DuplicateOptions": "{lightpurple}{0} {red}opción {lightyellow}usada más de {red}una vez.",
+  "bv_VoteWinner": "{white}Resultado de la votación: {lightpurple}{0} {lightyellow}ganó con {white}{1} votos!",
+  "bv_VoteTie": "{white}Empate en la votación: {lightpurple}{0} {lightyellow}recibió {white}{1} votos.",
+  "bv_NoVotesCast": "{red}No se emitieron votos."
+}	

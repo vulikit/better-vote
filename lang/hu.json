@@ -1,0 +1,17 @@
+﻿{
+  "bv_NotVoted": "{red}Még nem szavaztál.",
+  "bv_NoVote": "{red}Nincs folyamatban lévő szavazás.",
+  "bv_YesVote": "{red}Egy szavazás folyamatban van.",
+  "bv_WrongUsage": "{red}Helytelen használat! {lightred}Helyes használat: {white}!vote cím [opció1 opció2 opció3...]",
+  "bv_MaxOptions": "{red}Legfeljebb {lightpurple}7 {red}opciót adhatsz hozzá!",
+  "bv_VoteStopped": "{red}A szavazás véget ért.",
+  "bv_AlreadyVoted": "{red}Már szavaztál erre: {lightpurple}{0}{red}.",
+  "bv_VotedFor": "{lightpurple}{0} {lightyellow}szavazott erre.",
+  "bv_VotedAgainFor": "{lightpurple}{0} {lightyellow}újra szavazott erre.",
+  "bv_PlayerVotedFor": "{lightpurple}{0} {white}szavazott erre: {lightyellow}{1}.",
+  "bv_PlayerAgainVotedFor": "{lightpurple}{0} {white}újra szavazott erre: {lightyellow}{1}.",
+  "bv_DuplicateOptions": "{lightpurple}{0} {red}opció {lightyellow}többször {red}használtad.",
+  "bv_VoteWinner": "{white}Szavazás eredménye: {lightpurple}{0} {lightyellow}{1} {white}szavazattal nyert!",
+  "bv_VoteTie": "{white}Döntetlen a szavazásban: {lightpurple}{0} {lightyellow}{1} {white}szavazatot kapott.",
+  "bv_NoVotesCast": "{red}Nem érkezett szavazat."
+}

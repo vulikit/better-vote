@@ -1,0 +1,17 @@
+﻿{
+  "bv_NotVoted": "{red}Bir oy kullanmadınız.",
+  "bv_NoVote": "{red}Bir oylama bulunmuyor.",
+  "bv_YesVote": "{red}Bir oylama bulunuyor.",
+  "bv_WrongUsage": "{red}Yanlış kullanım! {lightred}Doğru kullanım: {white}!vote başlık [seçenek1 seçenek2 seçenek3...]",
+  "bv_MaxOptions": "{red}En fazla {lightpurple}7 {red}seçenek ekleyebilirsiniz!",
+  "bv_VoteStopped": "{red}Oylama bitirildi.",
+  "bv_AlreadyVoted": "{red}Zaten {lightpurple}{0} {red}için bir oy kullandınız.",
+  "bv_VotedFor": "{lightpurple}{0} {lightyellow}için oy kullandınız.",
+  "bv_VotedAgainFor": "{lightpurple}{0} {lightyellow}için tekrar oy kullandınız.",
+  "bv_PlayerVotedFor": "{lightpurple}{0} {white}{lightyellow}{1} {white}için oy kullandı.",
+  "bv_PlayerAgainVotedFor": "{lightpurple}{0} {white}{lightyellow}{1} {white}için tekrar oy kullandı.",
+  "bv_DuplicateOptions": "{lightpurple}{0} {red}seçeneğini {lightyellow}birden fazla {red}kez kullandınız.",
+  "bv_VoteWinner": "{white}Oylama sonucu: {lightpurple}{0} {lightyellow}{1} {white}oyla kazandı!",
+  "bv_VoteTie": "{white}Oylama berabere: {lightpurple}{0} {lightyellow}{1} {white}oy aldı.",
+  "bv_NoVotesCast": "{red}Hiç oy kullanılmadı."
+}

@@ -1,0 +1,17 @@
+﻿{
+  "bv_NotVoted": "{red}Jeszcze nie zagłosowałeś.",
+  "bv_NoVote": "{red}Nie ma aktualnie żadnego głosowania.",
+  "bv_YesVote": "{red}Głosowanie jest w toku.",
+  "bv_WrongUsage": "{red}Błędne użycie! {lightred}Poprawne użycie: {white}!vote tytuł [opcja1 opcja2 opcja3...]",
+  "bv_MaxOptions": "{red}Możesz dodać maksymalnie {lightpurple}7 {red}opcji!",
+  "bv_VoteStopped": "{red}Głosowanie się zakończyło.",
+  "bv_AlreadyVoted": "{red}Już zagłosowałeś na {lightpurple}{0}{red}.",
+  "bv_VotedFor": "{lightpurple}{0} {lightyellow}zagłosował na.",
+  "bv_VotedAgainFor": "{lightpurple}{0} {lightyellow}ponownie zagłosował na.",
+  "bv_PlayerVotedFor": "{lightpurple}{0} {white}zagłosował na {lightyellow}{1}.",
+  "bv_PlayerAgainVotedFor": "{lightpurple}{0} {white}ponownie zagłosował na {lightyellow}{1}.",
+  "bv_DuplicateOptions": "{lightpurple}{0} {red}opcja {lightyellow}użyta więcej niż {red}raz.",
+  "bv_VoteWinner": "{white}Wynik głosowania: {lightpurple}{0} {lightyellow}wygrał z {white}{1} głosami!",
+  "bv_VoteTie": "{white}Remis w głosowaniu: {lightpurple}{0} {lightyellow}otrzymał {white}{1} głosów.",
+  "bv_NoVotesCast": "{red}Nie oddano żadnych głosów."
+}

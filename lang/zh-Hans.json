@@ -1,0 +1,17 @@
+﻿{
+  "bv_NotVoted": "{red}你还没有投票。",
+  "bv_NoVote": "{red}当前没有投票进行。",
+  "bv_YesVote": "{red}投票正在进行中。",
+  "bv_WrongUsage": "{red}使用错误！{lightred}正确用法：{white}!vote 标题 [选项1 选项2 选项3...]",
+  "bv_MaxOptions": "{red}最多可以添加 {lightpurple}7 {red}个选项！",
+  "bv_VoteStopped": "{red}投票已结束。",
+  "bv_AlreadyVoted": "{red}你已经为 {lightpurple}{0}{red} 投过票了。",
+  "bv_VotedFor": "{lightpurple}{0} {lightyellow}投了票。",
+  "bv_VotedAgainFor": "{lightpurple}{0} {lightyellow}再次投了票。",
+  "bv_PlayerVotedFor": "{lightpurple}{0} {white}投票给了 {lightyellow}{1}。",
+  "bv_PlayerAgainVotedFor": "{lightpurple}{0} {white}再次投票给了 {lightyellow}{1}。",
+  "bv_DuplicateOptions": "{lightpurple}{0} {red}选项 {lightyellow}被使用了 {red}多次。",
+  "bv_VoteWinner": "{white}投票结果：{lightpurple}{0} {lightyellow}以 {white}{1} 票获胜！",
+  "bv_VoteTie": "{white}投票平局：{lightpurple}{0} {lightyellow}获得 {white}{1} 票。",
+  "bv_NoVotesCast": "{red}没有投出任何票。"
+}
