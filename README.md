@@ -7,7 +7,7 @@
 - Customizable permissions for commands
 - Adjustable vote duration
 - Option to enable/disable VotedMessage for public votes
-- Supports 11 different languages (`Türkçe, English, Deutsch, Français, Español, Magyar, Latviešu, Polski, Português (Brasil), Русский, 简体中文`)
+- Supports 11 different languages (`Türkçe, English, Deutsch, Français, Español, Magyar, Lietuvių, Polski, Português (Brasil), Русский, 简体中文`)
 
 # <img src='https://emoji.discadia.com/emojis/caecbd46-4ce8-458b-9836-7e5f5863109b.gif'> Commands
 - `!vote <question> [option1, option2, option3...]` (If the player uses `!vote <question>` without options, the default options are "Yes" and "No") - `Starts a vote`
