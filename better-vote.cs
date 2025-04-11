@@ -17,7 +17,7 @@ namespace better_vote
     public partial class better_vote : BasePlugin, IPluginConfig<VoteConfig>
     {
         public override string ModuleName => "Better Vote System";
-        public override string ModuleVersion => "1.0.0";
+        public override string ModuleVersion => "1.0.1";
         public override string ModuleAuthor => "varkit";
         public VoteConfig Config { get; set; }
         public string prefix{ get; set; }
