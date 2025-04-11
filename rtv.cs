@@ -59,7 +59,7 @@ namespace better_vote
             if (playerCount < Config.RTV_MinimumPlayerCount)
             {
                 reply(caller, "bv_RTV_NeedPlayer", Config.RTV_MinimumPlayerCount);
-                //return; 
+                return; 
             }
 
             int requiredVotes = (playerCount / 2) + 1;
