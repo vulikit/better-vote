@@ -86,6 +86,7 @@ namespace better_vote
                 {
                     ChangeMap(winningOption);
                 }
+                
                 StopVoting();
             });
             var image = $"<img src='https://raw.githubusercontent.com/vulikit/better-vote/refs/heads/main/resources/votebox.png'>";

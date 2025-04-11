@@ -59,13 +59,18 @@ namespace better_vote
             if (playerCount < Config.RTV_MinimumPlayerCount)
             {
                 reply(caller, "bv_RTV_NeedPlayer", Config.RTV_MinimumPlayerCount);
-                //return;
+                //return; 
             }
 
             int requiredVotes = (playerCount / 2) + 1;
             rtvCount++;
             RTVPlayers.Add(caller.Slot);
             broadcast("bv_RTV_PlayerVotedBroadcast", caller.PlayerName, rtvCount, requiredVotes);
+
+            if (rtvCount >= requiredVotes)
+            {
+                StartRTV();
+            }
         }
 
         [ConsoleCommand("css_nominate")]
@@ -116,7 +121,7 @@ namespace better_vote
             menu.Display(caller, 20);
         }
 
-        [ConsoleCommand("css_extend")]
+        /*[ConsoleCommand("css_extend")]
         public void Command_Extend(CCSPlayerController? caller, CommandInfo command)
         {
             if (caller == null || !caller.IsValid || caller.IsBot || caller.IsHLTV)
@@ -156,12 +161,13 @@ namespace better_vote
             options.Clear();
             voteData.Clear();
             VotedPlayers.Clear();
-            Question = Localizer["bv_ExtendMenuTitle"];
-            options.Add(Localizer["bv_Yes"]);
-            options.Add(Localizer["bv_No"]);
+            Question = "Extend the map?";
+            options.Add("Yes");
+            options.Add("No");
 
+            Server.PrintToConsole("Starting extend vote...");
             StartVoting();
-            AddTimer(RTV_VoteDuration, () => EndExtendVote());
+            AddTimer(RTV_VoteDuration - 0.3f, EndExtendVote);
         }
 
         public void EndExtendVote()
@@ -171,16 +177,19 @@ namespace better_vote
 
             IsExtendVoteActive = false;
             VoteActive = false;
-            int playerCount = GetPlayerCount();
-            int requiredVotes = (playerCount / 2) + 1;
 
-            int yesVotes = voteData.ContainsKey(Localizer["bv_Yes"]) ? voteData[Localizer["bv_Yes"]] : 0;
-            if (yesVotes >= requiredVotes)
+            int yesVotes = voteData.ContainsKey("Yes") ? voteData["Yes"] : 0;
+            int noVotes = voteData.ContainsKey("No") ? voteData["No"] : 0;
+            Server.PrintToConsole($"Extend vote ended: Yes = {yesVotes}, No = {noVotes}");
+
+            if (yesVotes > noVotes)
             {
                 ExtendedRoundCount = ExtendStartRound + Config.RTV_MinimumRound - GetRoundCount();
+                Server.ExecuteCommand($"mp_maxrounds {GetRoundCount() + ExtendedRoundCount}");
                 broadcast("bv_Extend_Success", Config.RTV_MinimumRound);
                 rtvCount = 0;
                 RTVPlayers.Clear();
+                NominatedMaps.Clear();
             }
             else
             {
@@ -189,7 +198,11 @@ namespace better_vote
 
             ExtendVotedPlayers.Clear();
             extendVoteCount = 0;
-        }
+            voteData.Clear();
+            VotedPlayers.Clear();
+            options.Clear();
+            Question = "";
+        }*/
 
         public void StartRTV()
         {
@@ -215,6 +228,7 @@ namespace better_vote
                     options.Add(item);
                 }
             }
+            Server.PrintToConsole($"Starting RTV vote with options: {string.Join(", ", options)}");
             StartVoting();
         }
 
