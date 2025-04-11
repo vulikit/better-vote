@@ -59,7 +59,7 @@ namespace better_vote
             if (playerCount < Config.RTV_MinimumPlayerCount)
             {
                 reply(caller, "bv_RTV_NeedPlayer", Config.RTV_MinimumPlayerCount);
-                return;
+                //return;
             }
 
             int requiredVotes = (playerCount / 2) + 1;
@@ -121,6 +121,7 @@ namespace better_vote
         {
             if (caller == null || !caller.IsValid || caller.IsBot || caller.IsHLTV)
                 return;
+            if (!PlayerHasPermission(caller, Config.VotePermission)) return;
 
             if (IsRTVvoteActive)
             {
@@ -138,7 +139,7 @@ namespace better_vote
             if (playerCount < Config.RTV_MinimumPlayerCount)
             {
                 reply(caller, "bv_Extend_NeedPlayer", Config.RTV_MinimumPlayerCount);
-                return;
+                //return;
             }
 
             StartExtendVote();
