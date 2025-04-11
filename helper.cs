@@ -45,8 +45,17 @@ namespace better_vote
                 MenunManager2.CloseActiveMenu(player);
             }
             VoteActive = true;
-            AddTimer(VoteDuration, () =>
+            float ss = 0;
+            if (IsRTVvoteActive)
             {
+                ss = RTV_VoteDuration;
+            }else
+            {
+                ss = VoteDuration;
+            }
+            AddTimer(ss, () =>
+            {
+                string winningOption = "";
                 foreach (var player in Utilities.GetPlayers().Where(p => p is { IsHLTV: false, IsBot: false, IsValid: true }))
                 {
                     MenuManager.CloseActiveMenu(player);
@@ -56,7 +65,7 @@ namespace better_vote
                 {
                     var winner = voteData.OrderByDescending(x => x.Value).First();
                     int maxVotes = winner.Value;
-                    string winningOption = winner.Key;
+                    winningOption = winner.Key;
 
                     var winners = voteData.Where(x => x.Value == maxVotes).Select(x => x.Key).ToList();
                     if (winners.Count > 1)
@@ -73,13 +82,11 @@ namespace better_vote
                 {
                     broadcast("bv_NoVotesCast");
                 }
-
-                options.Clear();
-                Question = "";
-                voteData.Clear();
-                VotedPlayers.Clear();
-                broadcast("bv_VoteStopped");
-                VoteActive = false;
+                if(IsRTVvoteActive)
+                {
+                    ChangeMap(winningOption);
+                }
+                StopVoting();
             });
             var image = $"<img src='https://raw.githubusercontent.com/vulikit/better-vote/refs/heads/main/resources/votebox.png'>";
             WasdMenu wasd_votemenu = new WasdMenu($"<font color='#FFF085' class='fontSize-l'>{image} {Question} {image}</font>", this);
@@ -167,6 +174,21 @@ namespace better_vote
                     wasd_votemenu.DisplayToAll((int)VoteDuration);
                     break;
             }
+        }
+
+        public void StopVoting()
+        {
+            if (IsRTVvoteActive)
+            {
+
+                IsRTVvoteActive = false;
+            }
+            options.Clear();
+            Question = "";
+            voteData.Clear();
+            VotedPlayers.Clear();
+            broadcast("bv_VoteStopped");
+            VoteActive = false;
         }
 
         public void AddVote(CCSPlayerController player, string opt, int votenum)

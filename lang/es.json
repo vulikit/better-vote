@@ -13,5 +13,26 @@
   "bv_DuplicateOptions": "{lightpurple}{0} {red}opción {lightyellow}usada más de {red}una vez.",
   "bv_VoteWinner": "{white}Resultado de la votación: {lightpurple}{0} {lightyellow}ganó con {white}{1} votos!",
   "bv_VoteTie": "{white}Empate en la votación: {lightpurple}{0} {lightyellow}recibió {white}{1} votos.",
-  "bv_NoVotesCast": "{red}No se emitieron votos."
-}	
+  "bv_NoVotesCast": "{red}No se emitieron votos.",
+  "bv_RTV_PlayerVotedBroadcast": "{lime}{0} {white}ha votado {red}!rtv {white}! {red}({lime}{1} votos {white}/{lime}{2} necesarios{red})",
+  "bv_RTV_AlreadyVoted": "{red}¡Ya has votado {white}!rtv{red}!",
+  "bv_RTV_AlreadyRTV": "{red}¡Ya hay una votación {white}rtv {red}activa!",
+  "bv_RTV_Starting": "{red}¡La votación RTV está comenzando!",
+  "bv_RTV_NeedPlayer": "{red}RTV {white}requiere al menos {red}{0} {white}jugadores en el servidor!",
+  "bv_RTV_NotEnoughRounds": "{red}RTV {white}requiere que se hayan jugado al menos {red}{0} {white}rounds!",
+  "bv_Extend_AlreadyActive": "{red}¡Ya hay una votación de {white}extensión {red}activa!",
+  "bv_Extend_NeedPlayer": "{red}La votación de extensión {white}requiere al menos {red}{0} {white}jugadores!",
+  "bv_Extend_Success": "{white}¡Votación de extensión exitosa! El juego se extendió {red}{0} {white}rounds más.",
+  "bv_Extend_Failed": "{white}La votación de extensión falló.",
+  "bv_Extend_Failed_Voting": "{white}La votación de extensión falló. ¡Comenzando votación para nuevo mapa!",
+  "bv_ExtendMenuTitle": "¿Quieres extender el juego?",
+  "bv_NominateMenuTitle": "Nominar Mapa",
+  "bv_Nominate_VoteActive": "{red}Hay una votación activa, ¡no puedes nominar mapas!",
+  "bv_Nominate_NoMaps": "{red}¡No hay mapas disponibles para nominar!",
+  "bv_Nominate_AlreadyNominated": "{red}{0} {white}ya está nominado!",
+  "bv_Nominate_MaxNominations": "{red}¡Se alcanzó el límite máximo de nominaciones!",
+  "bv_Nominate_Success": "{lime}{0} {white}nominó el mapa {red}{1} {white}!",
+  "bv_Yes": "Sí",
+  "bv_No": "No",
+  "bv_Map_NotFound": "{red}¡El mapa {white}{0} {red}no fue encontrado!"
+}

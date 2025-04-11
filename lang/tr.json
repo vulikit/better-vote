@@ -13,5 +13,31 @@
   "bv_DuplicateOptions": "{lightpurple}{0} {red}seçeneğini {lightyellow}birden fazla {red}kez kullandınız.",
   "bv_VoteWinner": "{white}Oylama sonucu: {lightpurple}{0} {lightyellow}{1} {white}oyla kazandı!",
   "bv_VoteTie": "{white}Oylama berabere: {lightpurple}{0} {lightyellow}{1} {white}oy aldı.",
-  "bv_NoVotesCast": "{red}Hiç oy kullanılmadı."
+  "bv_NoVotesCast": "{red}Hiç oy kullanılmadı.",
+
+  "bv_RTV_PlayerVotedBroadcast": "{lime}{0} {white}adlı oyuncu {red}!rtv {white}verdi! {red}({lime}{1} oy verdi {white}/{lime}{2} oy gerekiyor{red})",
+  "bv_RTV_AlreadyVoted": "{red}Zaten {white}!rtv {red}oyunu verdin!",
+  "bv_RTV_AlreadyRTV": "{red}Zaten bir {white}rtv {red}oylaması aktif!",
+  "bv_RTV_Starting": "{red}RTV {white}oylaması başlıyor!",
+  "bv_RTV_NeedPlayer": "{red}RTV {white}için sunucuda en az {red}{0} {white}kişi olması gerekiyor!",
+  "bv_RTV_NotEnoughRounds": "{red}RTV {white}için en az {red}{0} {white}round oynanmış olmalı!",
+
+  "bv_Extend_AlreadyActive": "{red}Zaten bir {white}uzatma oylaması {red}aktif!",
+  "bv_Extend_NeedPlayer": "{red}Uzatma oylaması {white}için sunucuda en az {red}{0} {white}kişi olması gerekiyor!",
+  "bv_Extend_Success": "{white}Uzatma oylaması başarılı! Oyun {red}{0} {white}round daha uzatıldı.",
+  "bv_Extend_Failed": "{white}Uzatma oylaması başarısız oldu.",
+  "bv_Extend_Failed_Voting": "{white}Uzatma oylaması başarısız oldu. Yeni harita için oylama başlıyor!",
+  "bv_ExtendMenuTitle": "Oyunu uzatmak istiyor musunuz?",
+
+  "bv_NominateMenuTitle": "Harita Öner",
+  "bv_Nominate_VoteActive": "{red}Şu anda bir oylama aktif, harita öneremezsiniz!",
+  "bv_Nominate_NoMaps": "{red}Önerebileceğiniz bir harita bulunmuyor!",
+  "bv_Nominate_AlreadyNominated": "{red}{0} {white}zaten önerilmiş bir harita!",
+  "bv_Nominate_MaxNominations": "{red}Maksimum harita öneri sayısına ulaşıldı!",
+  "bv_Nominate_Success": "{lime}{0} {white}{red}{1} {white}haritasını önerdi!",
+
+  "bv_Yes": "Evet",
+  "bv_No": "Hayır",
+
+  "bv_Map_NotFound": "{red}{0} {white}haritası bulunamadı!"
 }

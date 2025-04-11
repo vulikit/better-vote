@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static CounterStrikeSharp.API.Core.Listeners;
 
 namespace better_vote
 {
@@ -29,6 +30,7 @@ namespace better_vote
             Console.WriteLine(" ");
 
             RegisterListener<Listeners.OnTick>(OnTick);
+            RegisterListener<Listeners.OnMapStart>(OnMapStart);
         }
 
         public void OnConfigParsed(VoteConfig config)
@@ -36,6 +38,7 @@ namespace better_vote
             Config = config;
             prefix = config.Prefix.ReplaceColorTags();
             VoteDuration = config.VoteDuration;
+            RTV_VoteDuration = config.RTV_VoteDuration;
         }
 
         public void OnTick()
