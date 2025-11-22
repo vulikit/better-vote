@@ -1,4 +1,3 @@
-[![Hits](https://hits.sh/github.com/silentsoft/hits.svg)](https://hits.sh/github.com/vulikit/hits/)
 # `Better Vote System` for Counter Strike 2 Servers
 > A simple voting plugin with support for various menu types.
 
